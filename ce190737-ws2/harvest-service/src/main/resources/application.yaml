@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: harvest-service
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=mss301_assignment2_harvest;encrypt=false;trustServerCertificate=true
+    username: sa
+    password: P@ssw0rd123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      # ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+server:
+  port: 8082
+
+farm-service:
+  url: http://localhost:8081

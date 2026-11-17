@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+        server:
+          webmvc:
+            routes:
+                - id: catalog-service
+                  uri: lb://catalog-service
+                  predicates:
+                    - Path=/api/v1/catalogs/**
+                  filters:
+                    - RewritePath=/api/v1/catalogs/(?<segment>.*), /api/v1/$\{segment}
+                    # http://localhost:8081/api/v1/catalogs/1 => http://localhost:8081/api/v1/1
+                - id: customer-service
+                  uri: lb://customer-service
+                  predicates:
+                    - Path=/api/v1/customers/**
+                  filters:
+                    - RewritePath= /api/v1/customers/(?<segment>.*), /api/v1/$\{segment}
+                - id: invoice-service
+                  uri: lb://invoice-service
+                  predicates:
+                    - Path=/api/v1/invoices/**
+                  filters:
+                    - RewritePath= /api/v1/invoices/(?<segment>.*), /api/v1/$\{segment}
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka-server:8761/eureka}
+
+server:
+  port: 8080

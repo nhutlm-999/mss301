@@ -1,0 +1,6 @@
+# application-{}.yaml -> extends application.yaml và override cái mới trong profile
+# profile là gì? Là một môi trường chạy ứng dụng, ví dụ như development, staging, production.
+
+
+server:
+  port: 8091

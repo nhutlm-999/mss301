@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: farm-service
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=mss301_assignment2_farm;encrypt=false;trustServerCertificate=true
+    username: sa
+    password: P@ssw0rd123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      #      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+server:
+  port: 8081

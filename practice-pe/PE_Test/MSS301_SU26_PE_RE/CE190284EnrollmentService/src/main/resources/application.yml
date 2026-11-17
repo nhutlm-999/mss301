@@ -1,0 +1,52 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: enrollment-service
+
+  datasource:
+    #  Doi ten db theo de
+    url: jdbc:sqlserver://localhost:1433;databaseName=MSS301_2026_PE_RE;encrypt=false;
+    username: sa
+    password: 123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    show-sql: true
+
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connect-timeout: 3000
+            read-timeout: 5000
+#  Doi ten service theo de
+course-service:
+  url: http://localhost:8081
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+# Neu de yeu cau dung properties
+#server.port=8082
+#spring.application.name=enrollment-service
+#spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=MSS301_2026_PE_RE;encrypt=false;
+#spring.datasource.username=sa
+#spring.datasource.password=sa
+#spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+#spring.jpa.hibernate.ddl-auto=none
+#spring.jpa.open-in-view=false
+#spring.jpa.show-sql=true
+#course-service.url=http://localhost:8081
+#spring.cloud.openfeign.client.config.default.connect-timeout=3000
+#spring.cloud.openfeign.client.config.default.read-timeout=5000
+#springdoc.api-docs.path=/v3/api-docs
+#springdoc.swagger-ui.path=/swagger-ui.html

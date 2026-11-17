@@ -1,0 +1,90 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            # Doi id va predicates cho 2 services theo yeu cau cua de
+            - id: course-service
+              uri: http://localhost:8081
+              predicates:
+                - Path=/api/courses/**
+            - id: enrollment-service
+              uri: http://localhost:8082
+              predicates:
+                - Path=/api/enrollments/**
+            - id: course-service-docs
+              uri: http://localhost:8081
+              predicates:
+                - Path=/course/v3/api-docs
+              filters:
+                - SetPath=/v3/api-docs
+            - id: enrollment-service-docs
+              uri: http://localhost:8082
+              predicates:
+                - Path=/enrollment/v3/api-docs
+              filters:
+                - SetPath=/v3/api-docs
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                allowed-origin-patterns: "*"
+                allowed-methods: "*"
+                allowed-headers: "*"
+                allow-credentials: false
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    urls:
+      - name: Course Service
+        url: /course/v3/api-docs
+      - name: enrollment Service
+        url: /enrollment/v3/api-docs
+
+# Neu de yeu cau dung properties
+#  server.port=8080
+#
+#  spring.application.name=hotel-gateway
+#
+#  # Gateway Routes
+#  spring.cloud.gateway.server.webflux.routes[0].id=room-service
+#  spring.cloud.gateway.server.webflux.routes[0].uri=http://localhost:8081
+#  spring.cloud.gateway.server.webflux.routes[0].predicates[0]=Path=/api/rooms/**
+#
+#  spring.cloud.gateway.server.webflux.routes[1].id=reservation-service
+#  spring.cloud.gateway.server.webflux.routes[1].uri=http://localhost:8082
+#  spring.cloud.gateway.server.webflux.routes[1].predicates[0]=Path=/api/reservations/**
+#
+#  # Room Service Swagger Docs
+#  spring.cloud.gateway.server.webflux.routes[2].id=room-service-docs
+#  spring.cloud.gateway.server.webflux.routes[2].uri=http://localhost:8081
+#  spring.cloud.gateway.server.webflux.routes[2].predicates[0]=Path=/room/v3/api-docs
+#  spring.cloud.gateway.server.webflux.routes[2].filters[0]=SetPath=/v3/api-docs
+#
+#  # Reservation Service Swagger Docs
+#  spring.cloud.gateway.server.webflux.routes[3].id=reservation-service-docs
+#  spring.cloud.gateway.server.webflux.routes[3].uri=http://localhost:8082
+#  spring.cloud.gateway.server.webflux.routes[3].predicates[0]=Path=/reservation/v3/api-docs
+#  spring.cloud.gateway.server.webflux.routes[3].filters[0]=SetPath=/v3/api-docs
+#
+#  # Global CORS
+#  spring.cloud.gateway.server.webflux.globalcors.cors-configurations.[/**].allowed-origin-patterns=*
+#  spring.cloud.gateway.server.webflux.globalcors.cors-configurations.[/**].allowed-methods=*
+#  spring.cloud.gateway.server.webflux.globalcors.cors-configurations.[/**].allowed-headers=*
+#  spring.cloud.gateway.server.webflux.globalcors.cors-configurations.[/**].allow-credentials=false
+#
+#  # Springdoc API Docs
+#  springdoc.api-docs.enabled=true
+#
+#  # Swagger UI
+#  springdoc.swagger-ui.path=/swagger-ui.html
+#  springdoc.swagger-ui.urls[0].name=Room Service
+#  springdoc.swagger-ui.urls[0].url=/room/v3/api-docs
+#  springdoc.swagger-ui.urls[1].name=Reservation Service
+#  springdoc.swagger-ui.urls[1].url=/reservation/v3/api-docs

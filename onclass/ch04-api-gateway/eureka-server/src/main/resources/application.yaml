@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    # Disable Eureka client registration and fetching registry for the Eureka server itself: false
+    # switch to true if you want the Eureka server to register itself with another Eureka server (useful in a multi-server setup)
+    # test xem có lỗi ko
+    register-with-eureka: true
+    fetch-registry:  true
+

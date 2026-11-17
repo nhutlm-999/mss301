@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: car-service
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=FUCarRenting_CarDB;encrypt=false;trustServerCertificate=true
+    username: sa
+    password: P@ssw0rd123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+#      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true

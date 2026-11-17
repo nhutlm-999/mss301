@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="11deb289-807e-4251-a861-08a71a097c1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/.idea/db-forest-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/api-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/catalog-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/catalog-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/catalog-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/catalog-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/catalog-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/config-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/config-repo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/eureka-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/eureka-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../onclass/ch04-api-gateway/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prm393/Lab4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prm393/Lab5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prm393/mobile-programming" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prm393/mobile-programming" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prm393/practice/shop_ease" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prm393/practice/shop_ease" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../voldedore/fa26-se1903-prm393-" beforeDir="false" afterPath="$PROJECT_DIR$/../../../voldedore/fa26-se1903-prm393-" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../voldedore/su26-se1816-prm393" beforeDir="false" afterPath="$PROJECT_DIR$/../../../voldedore/su26-se1816-prm393" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="ff043ffe-0d5f-45ec-b239-6bc86069d74f" value="" />
+    </colors>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nhutlm-999&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nhutlm-999/fa26.git&quot;,
+    &quot;accountId&quot;: &quot;cbc5677a-13d3-47aa-8b0e-b4b106216a6d&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3LPhbubyC59cBDDPCbtHDHz3i5q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/nhutlm/Workspace/FPT/FA26/mss301/practice-pe/pr_apigw-openfeign",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PrApigwOpenfeignApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.fpt.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="menu-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.fpt.menuservice.MenuServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.fpt.orderservice.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrApigwOpenfeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="pr_apigw-openfeign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.edu.fpt.pr_apigwopenfeign.PrApigwOpenfeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11deb289-807e-4251-a861-08a71a097c1e" name="Changes" comment="" />
+      <created>1793361687025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793361687025</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

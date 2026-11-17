@@ -1,0 +1,53 @@
+#server:
+#  port:8081
+#spring:
+#  application:
+#    name: catalog-service
+#  config:
+##    import: optional:configserver:http://localhost:8888
+#    import: optional:configserver:http://host.docker.internal:8888
+
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: catalog-service
+  datasource:
+#    url: jdbc:sqlserver://host.docker.internal:1433;databaseName=chinook_catalog;encrypt=false
+##    url: jdbc:sqlserver://localhost:1433;databaseName=chinook_catalog;encrypt=false
+#    username: sa
+#    password: P@ssw0rd123
+#    driver-class-name: com.microsoft.sqlxserver.jdbc.SQLServerDriver
+    url: jdbc:postgresql://dpg-dbbhkvvavr4c73dtp1m0-a.singapore-postgres.render.com:5432/chinook_catalog_ovmd?sslmode=require
+    username: chinook_catalog_ovmd_user
+    password: owHoi8WMKUa1O43K9cuY7iqPwuAVXwpl
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+#  config:
+#    import: optional:configserver:http://localhost:8888
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.orm.jdbc.bind: trace
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka-server:8761/eureka}
+
